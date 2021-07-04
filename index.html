@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eid-al-Fitr</title>
+  <!--подключение фавиконок-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <!--стили-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <a href="#" class="logo">Eid-al-Fitr</a>
+    <div class="toggle"></div>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Schedule</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="img/stars.png" alt="img" id="stars">
+    <img src="img/stars2.png" alt="img" id="stars2">
+    <img src="img/moon.png" alt="img" id="moon">
+    <h1 id="text">Eid Mubarak</h1>
+    <img src="img/rock.png" alt="img" id="rock">
+    <img src="img/masjid.png" alt="img" id="masjid">
+    <img src="img/bottom.png" alt="img" id="bottom">
+    <img src="img/lamp.png" alt="img" id="lamp">
+  </section>
+  <div class="sec">
+    <h2>Happy eid mubarak to you and your family.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus voluptate necessitatibus expedita amet veritatis optio eos? Omnis veritatis et necessitatibus molestiae vero deserunt minus a tenetur animi dolorum eum totam at consequatur nemo harum odio ullam libero reprehenderit eos sint, accusantium maiores magnam nesciunt cupiditate? Sint, provident laborum dolores dolor aliquid ipsa alias eos! Ipsa voluptatum, quis quod architecto fugiat officia earum, exercitationem ipsam odio, aliquam alias blanditiis nulla accusamus! Pariatur dolore nesciunt ratione nam aspernatur facere unde odio delectus similique possimus distinctio quo quos, provident illum perferendis aperiam temporibus eius omnis voluptate voluptates, sed sapiente velit labore ducimus? Ducimus eius error magni non dolorem, ipsum quod harum sit doloribus deleniti nisi numquam alias, fuga ad neque id dolor laboriosam natus beatae dolores consectetur eaque laborum! <br> <br> Illo consectetur fugit eveniet laborum rerum corporis ut impedit ex sapiente quaerat dolorum non doloremque quis libero voluptate officiis sequi aliquid dignissimos error, in, tempora facere? Tempore maxime id magnam perspiciatis, asperiores similique sint architecto quidem maiores dolore odio, reiciendis vel provident enim? Beatae saepe quis magni hic illum modi temporibus dolorum delectus quos. Inventore et quas dicta voluptatum earum voluptatibus repellat exercitationem sed unde dolore sapiente iste laboriosam ipsam, dolorem eos quidem. <br> <br>
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium sint aliquam quo id provident ex quos blanditiis molestias totam. Eligendi, iure exercitationem? Commodi itaque ad rem enim, sunt iusto tempore, eum exercitationem ullam nisi consequatur aperiam officia, dicta quibusdam cupiditate voluptatum hic sed impedit vero eligendi perspiciatis nemo? Quod iste fugit cumque fugiat ducimus, rem animi, cum nobis dolorem maxime sint distinctio quibusdam nihil quas commodi perspiciatis eaque accusantium reprehenderit asperiores nostrum? Autem fugit quo cumque placeat totam ullam sit est cum iure culpa facere illo quos dignissimos provident pariatur error, reiciendis nostrum possimus id. Asperiores enim id tempore? <br> <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ex eaque illum, laborum cupiditate facere excepturi nemo esse inventore aperiam, ducimus sint id? Et atque quae eaque, at a sed repudiandae eum officiis animi laboriosam magni fuga autem nisi tenetur. Unde quae veritatis consectetur ratione tempora in laboriosam similique perspiciatis, libero reiciendis, voluptatibus sit aut repellat maxime voluptas quo possimus. Iure quod laboriosam suscipit necessitatibus, ea omnis quaerat veritatis, facere quia corporis magni. Ut natus sint amet eligendi nobis molestiae quis ea. Quasi obcaecati, veritatis fuga qui vitae iure repellendus atque ad tempore vero quaerat rem fugiat velit. Iste voluptatibus temporibus ea placeat reiciendis illo omnis asperiores id quidem debitis amet exercitationem quo quam nisi, rem eos cumque soluta velit in recusandae. Natus accusantium voluptate quaerat odio tempora provident ex eius perferendis fugiat? <br> <br> Nulla eligendi, aspernatur exercitationem expedita fuga, a fugit sint eaque nostrum qui ad illum, fugiat animi delectus. Doloribus aliquam amet, aperiam soluta, minus maiores harum, excepturi officiis voluptatem obcaecati eaque facere aspernatur perferendis exercitationem quidem vero recusandae iure minima doloremque nam! Ut cum, laboriosam quisquam pariatur ducimus enim tempora et in sequi. Nobis earum dignissimos sunt explicabo quis quo vero laborum, ipsam repellat dolorem atque ab sit?
+    </p>
+  </div>
+</body>
+<!--подключение js анимации tilt-->
+<script src="js-tilt/vanilla-tilt.min.js"></script>
+<script>
+  let stars = document.getElementById('stars');
+  let stars2 = document.getElementById('stars2');
+  let moon = document.getElementById('moon');
+  let rock = document.getElementById('rock');
+  let masjid = document.getElementById('masjid');
+  let text = document.getElementById('text');
+  let header = document.getElementById('lamp');
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.bottom = value * 0.05 + '%';
+    stars2.style.bottom = value * 0.025 + '%';
+    moon.style.bottom = value * -0.5 + 'px';
+    rock.style.bottom = value * -0.15 + 'px';
+    masjid.style.bottom = value * -0.55 + 'px';
+    text.style.right = -100 + value * 0.45 + '%';
+    text.style.top = 50 + value * 0.1 + '%';
+    header.style.top = value * 0.5 + 'px';
+  });
+  //выпадающее меню
+  const toggleMenu = document.querySelector('.toggle');
+  const navigation = document.querySelector('.navigation');
+  toggleMenu.onclick = function(){
+    toggleMenu.classList.toggle('active');
+    navigation.classList.toggle('active')
+  };
+</script>
+</html>
